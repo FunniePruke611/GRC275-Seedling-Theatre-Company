@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+/* General Body Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVIGATION*/
+
+header {
+    background: linear-gradient(to top, transparent 0%, black 140%);
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+
+.logo {
+    display: block;
+    max-width: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.collapse {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-toggler {
+    z-index: 101;
+}
+
+.nav-item .nav-link {
+    color: ghostwhite;
+}
+
+.nav-item .nav-link:hover {
+    color: #aa8b4a;
+    transition: 0.3s ease-out;
+}
+
+#centerNavbar .navbar-nav {
+    font-size: 0.8rem;
+}
+
+#rightNavbar {
+    z-index: 102;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    border-color: ghostwhite;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.icon {
+    min-width: 5%;
+    width: 25px;
+    max-width: 50px;
+}
+
+    /* dropdown */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    text-decoration: none;
+    font-family: "Rozha One", serif;
+    padding: 20px;
+    background-color: #3d6f33;
+    width: 250px;
+}
+
+.dropdown-menu > li {
+    color: ghostwhite;
+    position: relative;
+    transition: right ease 0.3s;
+    right: 0;
+    pointer-events: none;
+  }
+
+.dropdown-menu > li > a {
+    color: ghostwhite;
+    pointer-events: auto;
+  }
+
+.dropdown-menu > li > p {
+    color: lightgray;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6rem;
+    padding-left: 10px;
+  }
+
+.dropdown-menu > li:hover {
+    right: -5px;
+  }
+
+.dropdown-menu > li > a:hover {
+    text-decoration: none;
+    color: lightgray;
+  }
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+#dropdown-toggler {
+    z-index: 102;
+}
+
+/*dropdown navbar*/
+
+#dropdownNavbar {
+    z-index: 101;
+    background-color: #A98A48;
+    padding: 0.5rem 1rem;
+}
+
+#dropdownNavbar ul {
+    list-style: none;
+}
+
+#dropdownNavbar > .row {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+#dropdownNavbar ul > li > a {
+    color: ghostwhite;
+    position: relative;
+    transition: right ease 0.3s;
+    right: 0;
+}
+
+#dropdownNavbar ul > li > a:hover {
+    text-decoration: none;
+    color: lightgray;
+    right: -5px;
+}
+
+#dropdownNavbar ul li ul li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+}
+
+.logo2 {
+    display: block;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Tickets Title */
+.tickets-title {
+  background-color: #A98A48;
+  text-align: center;
+  padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.tickets-title h1 {
+  color: ghostwhite;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; /* Smaller size */
+  font-weight: normal; /* Removes bold */
+  margin: 0; /* Optional: removes default spacing */
+}
+
+.calendar-background {
+  background: url('../IMAGES/Untitled-1.png') no-repeat center top;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 120px 20px 60px; /* Top padding increased to reveal top of image */
+  margin: 0;
+  position: relative;
+  z-index: 0;
+}
+
+
+/* Calendar Styles */
+.calendar {
+  width: 100%;
+  max-width: 800px;
+  margin: 150px auto 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  border-radius: 8px;
+
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(169, 138, 72, 0.92); /* Slight transparency */
+  color: white;
+  padding: 10px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.calendar-header button {
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius:20px; 
+}
+
+.calendar-header button:hover {
+  background-color: #cc3333;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+background-color: rgba(255, 255, 255, 0.92); /* white with 92% opacity */}
+
+.day-name, .day {
+  text-align: center;
+  background-color: #f0f0f0;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.day-name {
+  background-color: #ddd;
+  padding-top: 10px;
+}
+
+.day {
+  cursor: pointer;
+background-color: rgba(255, 255, 255, 0.92); /* white with 92% opacity */  transition: background-color 0.3s;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.day:hover {
+  background-color: none;
+}
+
+/* Event Info */
+.event-info {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-size: 0.7em;
+  line-height: 1.2;
+  text-decoration: none; /* Ensures no underline by default */
+}
+
+.event-info:hover {
+  text-decoration: none; /* Removes underline on hover */
+}
+
+.event-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.event-link:hover {
+  color: #cc3333;
+text-decoration: none;
+}
+
+/* Day Numbers in Corner */
+.day-number {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+/* Font for "Currently Showing" Title */
+.currently-showing-title {
+  font-family: 'Rozha One', serif; /* Or any other font you like */
+  font-size: 2.5em;
+  font-weight:200;
+  color: white; /* Change to any color you'd like */
+}
+
+/* Button Styles - "Buy Tickets Now" */
+.buy-tickets-btn {
+  background-color: #cc3333; /* Change button color */
+  color: white;
+  font-family: 'Montserrat', sans-serif; /* Font for the button */
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4); /* 2px X offset, 4px Y offset, 40% opacity */
+
+}
+
+.buy-tickets-btn:hover {
+  background-color: #2f6431; /* Hover color change */
+  text-decoration: none; /* Remove underline */
+    color: white;
+
+}
+
+/* Full-width background hero section */
+.full-width-hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 500px; /* Adjust height for a shorter hero section */
+  background: url('../IMAGES/STC_stage_edited.jpg') center center / cover no-repeat;
+  overflow: hidden;
+  padding-top: 180px;
+  color: white;
+  z-index: 1;
+}
+
+.full-width-hero .bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.full-width-hero .container {
+  position: relative;
+  z-index: 2;
+}
+h1 {
+    font-family: "Rozha One", serif;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: #50353A;
+    color: white;
+    padding: 45px 0 20px;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-heading a:hover {
+    color: #aa8b4a;
+    transition: 0.3s ease-out;
+    text-decoration: none;
+}
+
+.newsletter > div > * {
+    margin-bottom: 12px;
+}
+
+#newsletter-input {
+    width: 400px;
+    max-width: 100%;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-heading > * {
+    margin-bottom: 12px;
+}
+
+.logo-footer {
+    display: block;
+    width: 100px;
+    height: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons a svg {
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+}
+
+.social-icons a svg:hover {
+    fill: #aa8b4a;
+    transition: 0.3s ease-out;
+}

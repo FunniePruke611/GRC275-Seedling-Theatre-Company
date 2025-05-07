@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+    background-color: black;
+}
+
+header {
+    background: linear-gradient(to top, transparent 0%, black 140%);
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo {
+    display: block;
+    min-width: 5%;
+    max-width: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+}
+
+.collapse {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item .nav-link {
+    color: ghostwhite;
+}
+
+.nav-item .nav-link:hover {
+    color: green;
+}
+
+#centerNavbar .navbar-nav {
+    font-size: 0.8rem;
+}
+
+#rightNavbar {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    border-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.icon {
+    min-width: 5%;
+    width: 25px;
+    max-width: 50px;
+}
+
+    /* dropdown */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    text-decoration: none;
+    font-family: "Rozha One", serif;
+    padding: 10px;
+    background-color: #3d6f33;
+}
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.dropdown-menu>li>a {
+    color: ghostwhite;
+  }
+
+/* image */
+.abt-page-container {
+  padding-top: 10%;
+  background-color: black;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  margin-block: 10%;
+  padding: 1rem;
+}
+.contact-card img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.contact-info {
+  flex: 1;
+}
+.contact-info p {
+  margin: 0.25rem 0;
+  font-weight: bold;
+  color: white;
+}
+.contact-info .btn {
+  margin-top: 5rem;
+  border-radius: 20%;
+  border-color: red;
+  border-width: .15em;
+}
+
+.abt-page-header {
+    text-align: center;
+    color: white;
+}
