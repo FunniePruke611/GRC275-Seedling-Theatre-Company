@@ -179,7 +179,7 @@ header {
 }
 
 .calendar-background {
-  background: url('../IMAGES/Untitled-1.png') no-repeat center top;
+  background: url('Untitled-1.png') no-repeat center top;
   background-size: cover;
   background-attachment: scroll;
   padding: 120px 20px 60px; /* Top padding increased to reveal top of image */
@@ -333,7 +333,7 @@ text-decoration: none;
   width: 100%;
   height: auto;
   min-height: 500px; /* Adjust height for a shorter hero section */
-  background: url('../IMAGES/STC_stage_edited.jpg') center center / cover no-repeat;
+  background: url('STC_stage_edited.jpg') center center / cover no-repeat;
   overflow: hidden;
   padding-top: 180px;
   color: white;
