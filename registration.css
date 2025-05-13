@@ -224,7 +224,7 @@ font-family: "montserrat", sans-serif;
     color: #ffffff;
 }
 
-a {
+a.doclink {
     text-decoration: underline;
     color: #ab8c4a;
     font-weight: 600;
