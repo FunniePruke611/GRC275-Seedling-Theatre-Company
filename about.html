@@ -8,7 +8,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         
-            <link rel="stylesheet" href="../css/mystyle.css">
+            <link rel="stylesheet" href="about.css">
         
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,46 +21,89 @@
         
         <!-- header -->
         
-         <header>
-        <!-- navbar -->
-            <nav class="navbar navbar-expand-lg mr-auto">
-            <!-- navbar brand -->
-                <a class="navbar-brand d-flex mr-auto" href="#"><img class="img-fluid logo" src="../images/STCLogo_white2.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+        <header>
+            
+            <div class="container-fluid navbar-nav collapse position-absolute" id="dropdownNavbar">
+                <a class="navbar-brand mr-auto" href="index.html"><img class="img-fluid logo2" src="STCLogo.png"></a>
+                <div class="d-flex row justify-content-sm-center">
+                    <div class="">
+                        <ul>
+                            <li><a href="about.html"><h3>About</h3></a>
+                                <ul>
+                                    <li><a href="#">Code of Conduct</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="classes.html"><h3>Classes/Programs</h3></a>
+                                <ul>
+                                    <li><a href="classes.html">Classes</a></li>
+                                    <li><a href="#">Summer Camps</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul>
+                            <li><a href="registration.html"><h3>Registration</h3></a></li>
+                            <li><a href="#"><h3>Store</h3></a>
+                                <ul>
+                                    <li><a href="ticketcalendar.html">Tickets</a></li>
+                                    <li><a href="merch.html">Merch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Contact.html"><h3>Contact Us</h3></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- navbar brand -->
+            <nav class="navbar navbar-default navbar-expand-md mr-auto">
+                <a class="navbar-brand d-flex mr-auto" href="index.html"><img class="img-fluid logo" src="STCLogo_white2.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdownNavbar">
+                <span class="navbar-toggler-icon"><img class="icon" src="burger_menu_icon.svg"></span>
                 </button>
             <!-- navbar center -->
                 <div class="collapse navbar-collapse w-100" id="centerNavbar">
-                <ul class="navbar-nav navbar-expand-sm mx-auto w-100 justify-content-center text-center">
+                <ul class="navbar-nav navbar-expand-md mx-auto w-100 justify-content-center text-center">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href="#">ABOUT</a>
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href="about.html">ABOUT</a>
                         <ul class="dropdown-menu dropdown-menu-center">
-                            <li ><a class="dropwdown-item" href="#">Meet the Staff</a></li>
-                            <li ><a class="dropwdown-item" href="#">Our Company Overview</a></li>
-                            <li ><a class="dropwdown-item" href="#">Code of Conduct</a></li>
-                            <li ><a class="dropwdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropwdown-item" href="#">Code of Conduct</a></li>
+                            <li><a class="dropwdown-item" href="#">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#">CLASSES/PROGRAMS</a>
+                        <a class="nav-link dropdown-toggle" href="classes.html">CLASSES/PROGRAMS</a>
                         <ul class="dropdown-menu">
-                            <li ><a class="dropwdown-item" href="#">Classes</a></li>
-                            <li ><a class="dropwdown-item" href="#">Summer Camps</a></li>
+                            <li><a class="dropwdown-item" href="classes.html">Classes</a>
+                                <br>
+                                <p>Choose from a variety of semester-long courses ranging from performance to technical classes</p>
+                            </li>
+                            <li><a class="dropwdown-item" href="#">Summer Camps</a>
+                                <br>
+                                <p class="pb-0 m-0">Shorter one-day workshops and week-long theatre camps</p>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">REGISTRATION</a>
+                        <a class="nav-link" href="registration.html">REGISTRATION</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">STORE</a>
                         <ul class="dropdown-menu">
-                            <li ><a class="dropwdown-item" href="#">Tickets</a></li>
-                            <li ><a class="dropwdown-item" href="#">Merch</a></li>
-                            <li ><a class="dropwdown-item" href="#">Support Us</a></li>
+                            <li><a class="dropwdown-item" href="ticketcalendar.html">Tickets</a>
+                                <br>
+                                <p>Buy tickets to see our performances on the stage!</p>
+                            </li>
+                            <li><a class="dropwdown-item" href="merch.html">Merch</a>
+                                <br>
+                                <p class="pb-0 m-0">Buy STC branded items such as shirts and pins</p>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
+                        <a class="nav-link" href="Contact.html">CONTACT US</a>
                     </li>
                 </ul>
                 </div>
@@ -68,18 +111,18 @@
                 <div class="collapse navbar-collapse" id="rightNavbar">
                 <ul class="navbar-nav navbar-expand-sm ml-auto justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="icon" src="../images/ticket_icon.svg"></a>
+                        <a class="nav-link" href="ticketcalendar.html"><img class="icon" src="ticket_icon.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="icon" src="../images/calendar_icon.svg"></a>
+                        <a class="nav-link" href="ticketcalendar.html"><img class="icon" src="calendar_icon.svg"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="icon" src="../images/account_icon.svg"></a>
+                        <a class="nav-link" href="CreateAccount.html"><img class="icon" src="account_icon.svg"></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img class="icon" src="../images/burger_menu_icon.svg"></a>
-                    </li>
-                </ul>
+                    <li class="nav-item" id="dropdown-toggler">
+                        <a class="nav-link btn" data-toggle="collapse" href="#dropdownNavbar" aria-expanded="false" aria-controls="dropdownNavbar"><img class="icon" src="burger_menu_icon.svg"></a>
+                    </li> 
+                </ul> 
                 </div>
                 
             </nav>
@@ -107,7 +150,7 @@
                 
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Easter_edited.jpg" width="300" height="400" alt="Profile Picture">
+        <img src="Easter_edited.jpg" width="300" height="400" alt="Profile Picture">
         <div class="contact-info">
         </div>
       </div>
@@ -129,7 +172,7 @@
     
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Copy%20of%20Christine%20Hanchey.jpg" width="300" height="400" alt="Profile Picture">
+        <img src="Copy%20of%20Christine%20Hanchey.jpg" width="300" height="400" alt="Profile Picture">
         <div class="contact-info">
           <p>Christine</p>
           <p>Hanchey</p>
@@ -146,7 +189,7 @@
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="../Images/Copy%20of%20Christine%20Hanchey.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
+        <img src="Copy%20of%20Christine%20Hanchey.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
        <p>Christine has been passionate about music and performing for as long as she can remember. She began dance lessons at the age of five and, by seven, was touring with a children’s performing group, bringing joy to audiences at schools, businesses, and community events. At nine, she discovered her love for theatre through her first community production, and from that moment on, the stage became her second home.
            <br>
            <br>
@@ -173,7 +216,7 @@ When she’s not in the theatre, Christine loves traveling, reading, and enjoyin
 
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Copy%20of%20Manny%20Van%20Buskirk.jpg" width="300" height="400" alt="Profile Picture">
+        <img src="Copy%20of%20Manny%20Van%20Buskirk.jpg" width="300" height="400" alt="Profile Picture">
         <div class="contact-info">
           <p>Manny</p>
           <p>Van Buskirk</p>
@@ -189,7 +232,7 @@ When she’s not in the theatre, Christine loves traveling, reading, and enjoyin
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="../Images/Copy%20of%20Manny%20Van%20Buskirk.jpg" alt="Manny Van Buskirk" class="img-fluid rounded mb-3" style="max-width: 200px;">
+        <img src="Copy%20of%20Manny%20Van%20Buskirk.jpg" alt="Manny Van Buskirk" class="img-fluid rounded mb-3" style="max-width: 200px;">
        <p>Manny Van Buskirk brings a wealth of experience, passion, and leadership to Seedling Theatre as our Theatre Manager and Instructor. Her love for theatre began at just seven years old when she stepped onto the stage for her very first play in California. Since then, she has dedicated her life to inspiring young artists and fostering a love for the performing arts.
            <br>
            <br>
@@ -215,7 +258,7 @@ Manny’s incredible passion for theatre, education, and mentorship makes her an
 
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Copy%20of%20Danni%20Walch.jpg" width="300" height="400" alt="Profile Picture">
+        <img src="Copy%20of%20Danni%20Walch.jpg" width="300" height="400" alt="Profile Picture">
         <div class="contact-info">
           <p>Danni</p>
           <p>Walch</p>
@@ -232,7 +275,7 @@ Manny’s incredible passion for theatre, education, and mentorship makes her an
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="../Images/Copy%20of%20Danni%20Walch.jpg" alt="Danny Walch" class="img-fluid rounded mb-3" style="max-width: 200px;">
+        <img src="Copy%20of%20Danni%20Walch.jpg" alt="Danny Walch" class="img-fluid rounded mb-3" style="max-width: 200px;">
        <p>Danni Walch Began her 49-year theatrical career with her stage debut at age four. She received early song and dance training through The Sundance Kids in Southern Utah and performed all over the state. Growing up in Cedar City Utah, Home of the Utah Shakespeare Festival, and born to a theatre-loving family, Danni was surrounded by the arts and blessed with many wonderful influences, shows, parades, and places to perform.
            <br>
            <br>
@@ -261,7 +304,7 @@ Danni’s most cherished role is being a mom to her four children.
 
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Copy%20of%20Britni%20Favero.jpg" width="300" height="400" alt="Profile Picture">
+        <img src="Copy%20of%20Britni%20Favero.jpg" width="300" height="400" alt="Profile Picture">
         <div class="contact-info">
           <p>Britni</p>
           <p>Favero</p>
@@ -278,7 +321,7 @@ Danni’s most cherished role is being a mom to her four children.
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="../Images/Copy%20of%20Britni%20Favero.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
+        <img src="Copy%20of%20Britni%20Favero.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
        <p>Britni is married to her high school sweetheart and is the proud mom of three beautiful boys. Her soul's greatest joy and passion is her family - and when she isn’t homeschooling or chasing her rambunctious boys around, she can be found doing her next greatest passion: Teaching. 
            <br>
            <br>
@@ -307,7 +350,7 @@ Above all, Britni is known not only for her technical expertise, but also for he
 
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Copy%20of%20Devyn%20McQueen.jpg" width="300" height="400" alt="Profile Picture">
+        <img src="Copy%20of%20Devyn%20McQueen.jpg" width="300" height="400" alt="Profile Picture">
         <div class="contact-info">
           <p>Devyn</p>
           <p>McQueen</p>
@@ -324,7 +367,7 @@ Above all, Britni is known not only for her technical expertise, but also for he
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="../Images/Copy%20of%20Devyn%20McQueen.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
+        <img src="Copy%20of%20Devyn%20McQueen.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
        <p>Devyn, a native of San Antonio, Texas, earned her Bachelor of Fine Arts in Design and Technology of Theatre from the University of Evansville in Indiana. After graduation, she relocated to Minneapolis, MN, where she spent five years teaching devised theatre at a local children’s theatre during their summer camps. During this time, she also had the privilege of working as a Child Supervisor for the Guthrie Theatre's renowned annual production of A Christmas Carol. 
 Since moving to Las Vegas, Devyn has contributed to over seven Seedling productions. She is deeply passionate about providing a safe and supportive environment where children can freely explore and express their creativity. Devyn is dedicated to nurturing young minds and creating environments where creativity thrives, ensuring children have the tools they need to succeed.
 
@@ -340,7 +383,7 @@ Since moving to Las Vegas, Devyn has contributed to over seven Seedling producti
 
     <div class="col-md-6 col-lg-4">
       <div class="contact-card">
-        <img src="../Images/Copy%20of%20Emilie%20Moulton.jpg" width="300" height="400"  alt="Profile Picture">
+        <img src="Copy%20of%20Emilie%20Moulton.jpg" width="300" height="400"  alt="Profile Picture">
         <div class="contact-info">
           <p>Emilie</p>
           <p>Moulton</p>
@@ -357,7 +400,7 @@ Since moving to Las Vegas, Devyn has contributed to over seven Seedling producti
         </button>
       </div>
       <div class="modal-body text-center">
-        <img src="../Images/Copy%20of%20Emilie%20Moulton.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
+        <img src="Copy%20of%20Emilie%20Moulton.jpg" alt="Christine Hanchey" class="img-fluid rounded mb-3" style="max-width: 200px;">
        <p>Emilie started taking dance and vocal classes when she was 10 years old. Performing (with both her studio and school) shaped her life. She graduated from Southern Utah University with a BFA in Musical Theatre and Theatre Education. She has performed professionally with Utah Shakespeare Festival, Neil Simon Fest, and Tuachan, as well as locally with Huntsman Entertainment and here at Seedling. Some of her favorite roles have been Sally in You’re a Good Man, Charlie Brown, Amy in Little Women, Kathy in Company, and Laurie in Oklahoma. She’s been a choreographer for 18 years and teaching theatre and show choir classes for 12 years and loves watching young performers grow. 
 
 
@@ -377,25 +420,79 @@ Since moving to Las Vegas, Devyn has contributed to over seven Seedling producti
         
         
             
-            <div class="footer-content">
+            <!-- footer -->
+            
+        <footer class="container-fluid">
+                <div class="row footer-heading m-0 p-0">
+                    <div class="col-md-6 col-sm-12 col-xs-12 newsletter">
+                        <h4>NEWSLETTER</h4>
+                        <p>Stay up to date with the latest news!</p>
+                        <div>
+                            <input class="form-control-lg rounded-pill" placeholder="Your E-mail Address" id="newsletter-input">
+                            <button class="btn-lg text-light rounded-pill btn-danger shadow">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <h4>THEATRE</h4>
+                        <ul class="footer-links">
+                            <li><a href="ticketscalendar.html">Calendar</a></li>
+                            <li><a href="about.html">Company</a></li>
+                            <li><a href="classes.html">Classes/Programs</a></li>
+                            <li><a href="merch.html">Merch</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="ticketscalendar.html">Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <h4>ABOUT</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Code of Conduct</a></li>
+                            <li><a href="Contact.html">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <h4>CONTACT</h4>
+                        <ul class="footer-links">
+                            <li><a href="tel:+17027386022">+1 702 738 6022</a></li>
+                            <li>980 AMERICAN PACIFIC DR #103 HENDERSON, NV 89014</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <h4 style="color: white"> Seedling Theatre Company</h4>
-                <img src="../Images/STCLogo_white.png" style="width:100pxx;height:100px;">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Subscribe</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Contact</a></li>  
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Registration</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Social</a></li>
-            </div>
+                <hr> <!--------------------------------------------------------------------------->
                 
-            <p>©2025 Seedling Theatre Company | All Right Reserved.</p>
-                
-            </div>
+                <div class="d-flex row footer-heading">
+                    <div class="d-flex col-lg-2 col-md-2 col-sm-3 col-xs-6 align-self-center">
+                        <img class="logo-footer" src="STCLogo_white.png">
+                    </div>
+                    <div class="d-flex col-md-7 col-sm-9 col-xs-6 justify-content-center align-self-center">
+                        <p class="copyright-text m-0">Copyright &copy; 2025 All Rights Reserved by
+                        <a href="#">Seedling Theatre Company</a>.
+                        </p>
+                    </div>
+
+                    <div class="d-flex col-md-3 col-sm-12 col-xs-12 justify-content-center">
+                        <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/seedlingkids00">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                        </a></li>
+                        <li><a class="x-twitter" href="https://x.com/seedlingkids">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                        </a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                        </a></li>
+                        <li><a class="tiktok" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>
+                        </a></li>
+                    </ul>
+                    </div>
+                </div>
+        </footer>
         
     </body>
 
