@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    background-color: black;
+   background-color: #59573e;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -217,13 +217,20 @@ header {
   height: 200px;
   object-fit: cover;
   margin-right: 1rem;
+    background-color: white;
 }
 .contact-info {
   flex: 1;
 }
+.contact-info h4 {
+  margin: 0.25rem 0;
+    font-family: "Rozha One", serif;
+  color: white;
+}
+
 .contact-info p {
   margin: 0.25rem 0;
-  font-weight: bold;
+    font-family: "Montserrat", sans-serif;
   color: white;
 }
 .contact-info .btn {
@@ -236,6 +243,20 @@ header {
 .abt-page-header {
     text-align: center;
     color: white;
+}
+
+/* Modal */
+
+.modal-title {
+    font-family: "Rozha One", serif;
+}
+
+.modal-body {
+    background-color: #59573e;
+}
+
+.modal-header {
+    background-color: #A98A48;
 }
 
 /* footer */
