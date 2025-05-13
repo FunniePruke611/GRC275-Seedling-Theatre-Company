@@ -2,6 +2,19 @@
 
 body {
     background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: "Rozha One", serif;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-family: "Rozha One", serif;
 }
 
 /*NAVIGATION*/
