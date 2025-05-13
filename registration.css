@@ -199,7 +199,7 @@ header {
   box-sizing: border-box;
     background-color: #59573D;
     padding: min(5%, 45px);
-    margin-top: 22.5px;
+    margin-top: 0px;
     width: 90%;
     border-radius: 15vw 15vw 0px 0px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
