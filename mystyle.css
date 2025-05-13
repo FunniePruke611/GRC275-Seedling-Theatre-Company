@@ -202,15 +202,25 @@ header {
 
 .carousel-caption {
     text-align: left;
+    max-height: 50;
 }
 
 .carousel-caption > h1 {
     line-height: 90%;
 }
 
+@media (max-width: 576px) {
+        .display-1 {
+      font-size: 4.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+}
+
 .carousel-item > img {
     object-fit: cover;
     height: 100vh;
+    object-position: 70% 30%;
 }
 
 /* Tickets Title */
