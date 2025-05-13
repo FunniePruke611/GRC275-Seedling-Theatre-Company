@@ -8,6 +8,18 @@ body {
     background-color:#53734B
 }
 
+h1 {
+    font-family: "Rozha One", serif;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-family: "Rozha One", serif;
+}
+
 /*NAVIGATION*/
 
 header {
