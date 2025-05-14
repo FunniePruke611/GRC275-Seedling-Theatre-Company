@@ -302,6 +302,14 @@ background-color: rgba(255, 255, 255, 0.92); /* white with 92% opacity */  trans
 text-decoration: none;
 }
 
+#eventModal .btn-success {
+  background-color: #cc3333;  /* Example: pink */
+}
+
+#eventModal .btn-success:hover {
+  background-color: #2f6431;  /* Darker pink on hover */
+}
+
 /* Day Numbers in Corner */
 .day-number {
   position: absolute;
