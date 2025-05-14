@@ -214,7 +214,7 @@
   ];
 
   let currentYear = 2025;
-  let currentMonth = 3; // April (0-based)
+  let currentMonth = 4; // May (0-based)
 
   // ENTER EVENTS HERE - April 2025
   const events = [
@@ -283,9 +283,16 @@
       dayEvents.forEach(event => {
         const eventInfo = document.createElement("div");
         eventInfo.className = "event-info";
-        eventInfo.innerHTML = `<a class="event-link" href="${event.link}" target="_blank">
-                                ${event.name} at ${event.time}
-                              </a>`;
+        eventInfo.innerHTML = `
+  <a href="#" class="event-link"
+     data-toggle="modal"
+     data-target="#eventModal"
+     data-name="${event.name}"
+     data-date="${thisDateStr}"
+     data-time="${event.time}"
+     data-price="15.00">
+     ${event.name} at ${event.time}
+  </a>`;
         dayEl.classList.add("event-day");
         dayEl.appendChild(eventInfo);
       });
@@ -384,6 +391,31 @@
                 </div>
         </footer>
     
+<script>
+  function updateTicketQuantity(change) {
+    const input = document.getElementById("ticketQty");
+    let qty = parseInt(input.value, 10);
+    qty += change;
+    if (qty < 1) qty = 1;
+    input.value = qty;
+  }
 
+  $('#eventModal').on('show.bs.modal', function (event) {
+    const link = $(event.relatedTarget);
+    const name = link.data('name');
+    const date = link.data('date');
+    const time = link.data('time');
+    const price = link.data('price');
+
+    $(this).find('#eventTitle').text(`${name}`);
+    $(this).find('#eventDetails').html(`
+      <strong>Date:</strong> ${date}<br>
+      <strong>Time:</strong> ${time}<br>
+      <strong>Price:</strong> $${price} per ticket
+    `);
+
+    $('#ticketQty').val(1);
+  });
+</script>
 </body>
 </html>
