@@ -145,28 +145,28 @@
           
         <!-- Repeat this block for each product -->
         <div class="product-card">
-          <img src="shirt.png" alt="T-SHIRT" class="product-image">
+          <img src="shirt.png" alt="T-SHIRT" class="product-image" data-toggle="modal" data-target="#modalShirt">
           <p class="product-description">T-SHIRT</p>
           <p class="product-price">$25</p>
           <button class="add-to-cart-btn">Add to Cart</button>
         </div>
           
                   <div class="product-card">
-          <img src="hoodie.png" alt="HOODIE" class="product-image">
+          <img src="hoodie.png" alt="HOODIE" class="product-image" data-toggle="modal" data-target="#modalHoodie">
           <p class="product-description">HOODIE</p>
           <p class="product-price">$40</p>
           <button class="add-to-cart-btn">Add to Cart</button>
         </div>
                   <div class="product-card">
-          <img src="hat.png" alt="HAT" class="product-image">
+          <img src="hat.png" alt="HAT" class="product-image" data-toggle="modal" data-target="#modalHat">
           <p class="product-description">HAT</p>
           <p class="product-price">$15</p>
           <button class="add-to-cart-btn">Add to Cart</button>
         </div>
                   <div class="product-card">
-          <img src="beanie.png" alt="BEANIE" class="product-image">
+          <img src="beanie.png" alt="BEANIE" class="product-image" data-toggle="modal" data-target="#modalBeanie">
           <p class="product-description">BEANIE</p>
-          <p class="product-price">$45</p>
+          <p class="product-price">$15</p>
           <button class="add-to-cart-btn">Add to Cart</button>
         </div>
 
@@ -248,6 +248,82 @@
                     </div>
                 </div>
         </footer>
-    
+
+<!-- T-SHIRT Modal -->
+<div class="modal fade" id="modalShirt" tabindex="-1" role="dialog" aria-labelledby="modalShirtLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalShirtLabel">T-SHIRT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="shirt.png" alt="T-SHIRT" class="img-fluid mb-3" />
+        <p>This comfy STC-branded shirt is perfect for rehearsals, performances, or showing off your theatre pride!</p>
+        <p><strong>Price:</strong> $25</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HOODIE Modal -->
+<div class="modal fade" id="modalHoodie" tabindex="-1" role="dialog" aria-labelledby="modalHoodieLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalHoodieLabel">HOODIE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="hoodie.png" alt="HOODIE" class="img-fluid mb-3" />
+        <p>Stay warm and cozy with our premium quality STC hoodie – great for cool days at the theatre!</p>
+        <p><strong>Price:</strong> $40</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HAT Modal -->
+<div class="modal fade" id="modalHat" tabindex="-1" role="dialog" aria-labelledby="modalHatLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalHatLabel">HAT</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="hat.png" alt="HAT" class="img-fluid mb-3" />
+        <p>Top off your look with our stylish STC hat – a great way to show support and stay sun-safe!</p>
+        <p><strong>Price:</strong> $15</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BEANIE Modal -->
+<div class="modal fade" id="modalBeanie" tabindex="-1" role="dialog" aria-labelledby="modalBeanieLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBeanieLabel">BEANIE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="beanie.png" alt="BEANIE" class="img-fluid mb-3" />
+        <p>Keep your head warm in style with our ultra-soft STC beanie – comfort and pride combined!</p>
+        <p><strong>Price:</strong> $45</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
 </body>
 </html>
