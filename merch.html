@@ -144,30 +144,30 @@
       <div class="products-container">
           
         <!-- Repeat this block for each product -->
-        <div class="product-card">
+     <div class="product-card">
           <img src="shirt.png" alt="T-SHIRT" class="product-image" data-toggle="modal" data-target="#modalShirt">
           <p class="product-description">T-SHIRT</p>
           <p class="product-price">$25</p>
-          <button class="add-to-cart-btn">Add to Cart</button>
+<button class="add-to-cart-btn" data-toggle="modal" data-target="#cartModalShirt">Add to Cart</button>
         </div>
           
                   <div class="product-card">
           <img src="hoodie.png" alt="HOODIE" class="product-image" data-toggle="modal" data-target="#modalHoodie">
           <p class="product-description">HOODIE</p>
           <p class="product-price">$40</p>
-          <button class="add-to-cart-btn">Add to Cart</button>
+<button class="add-to-cart-btn" data-toggle="modal" data-target="#cartModalHoodie">Add to Cart</button>
         </div>
                   <div class="product-card">
           <img src="hat.png" alt="HAT" class="product-image" data-toggle="modal" data-target="#modalHat">
           <p class="product-description">HAT</p>
           <p class="product-price">$15</p>
-          <button class="add-to-cart-btn">Add to Cart</button>
+<button class="add-to-cart-btn" data-toggle="modal" data-target="#cartModalHat">Add to Cart</button>
         </div>
                   <div class="product-card">
           <img src="beanie.png" alt="BEANIE" class="product-image" data-toggle="modal" data-target="#modalBeanie">
           <p class="product-description">BEANIE</p>
           <p class="product-price">$15</p>
-          <button class="add-to-cart-btn">Add to Cart</button>
+<button class="add-to-cart-btn" data-toggle="modal" data-target="#cartModalBeanie">Add to Cart</button>
         </div>
 
         <!-- Other products go here -->
@@ -321,6 +321,66 @@
         <p>Keep your head warm in style with our ultra-soft STC beanie – comfort and pride combined!</p>
         <p><strong>Price:</strong> $45</p>
       </div>
+    </div>
+  </div>
+</div>
+
+  <!-- CART MODAL – T-SHIRT -->
+<div class="modal fade" id="cartModalShirt" tabindex="-1" role="dialog" aria-labelledby="cartModalShirtLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-center p-3">
+      <h5 class="modal-title mb-3">T-Shirt Added to Cart</h5>
+      <div class="d-flex justify-content-center align-items-center mb-3">
+        <button class="btn btn-outline-secondary btn-sm mr-2" onclick="updateQuantity('shirtQty', -1)">−</button>
+        <input type="text" id="shirtQty" value="1" readonly class="form-control form-control-sm text-center" style="width: 50px;">
+        <button class="btn btn-outline-secondary btn-sm ml-2" onclick="updateQuantity('shirtQty', 1)">+</button>
+      </div>
+      <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- CART MODAL – HOODIE -->
+<div class="modal fade" id="cartModalHoodie" tabindex="-1" role="dialog" aria-labelledby="cartModalHoodieLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-center p-3">
+      <h5 class="modal-title mb-3">Hoodie Added to Cart</h5>
+      <div class="d-flex justify-content-center align-items-center mb-3">
+        <button class="btn btn-outline-secondary btn-sm mr-2" onclick="updateQuantity('hoodieQty', -1)">−</button>
+        <input type="text" id="hoodieQty" value="1" readonly class="form-control form-control-sm text-center" style="width: 50px;">
+        <button class="btn btn-outline-secondary btn-sm ml-2" onclick="updateQuantity('hoodieQty', 1)">+</button>
+      </div>
+      <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- CART MODAL – HAT -->
+<div class="modal fade" id="cartModalHat" tabindex="-1" role="dialog" aria-labelledby="cartModalHatLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-center p-3">
+      <h5 class="modal-title mb-3">Hat Added to Cart</h5>
+      <div class="d-flex justify-content-center align-items-center mb-3">
+        <button class="btn btn-outline-secondary btn-sm mr-2" onclick="updateQuantity('hatQty', -1)">−</button>
+        <input type="text" id="hatQty" value="1" readonly class="form-control form-control-sm text-center" style="width: 50px;">
+        <button class="btn btn-outline-secondary btn-sm ml-2" onclick="updateQuantity('hatQty', 1)">+</button>
+      </div>
+      <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- CART MODAL – BEANIE -->
+<div class="modal fade" id="cartModalBeanie" tabindex="-1" role="dialog" aria-labelledby="cartModalBeanieLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content text-center p-3">
+      <h5 class="modal-title mb-3">Beanie Added to Cart</h5>
+      <div class="d-flex justify-content-center align-items-center mb-3">
+        <button class="btn btn-outline-secondary btn-sm mr-2" onclick="updateQuantity('beanieQty', -1)">−</button>
+        <input type="text" id="beanieQty" value="1" readonly class="form-control form-control-sm text-center" style="width: 50px;">
+        <button class="btn btn-outline-secondary btn-sm ml-2" onclick="updateQuantity('beanieQty', 1)">+</button>
+      </div>
+      <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Done</button>
     </div>
   </div>
 </div>
